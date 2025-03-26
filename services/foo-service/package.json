@@ -1,0 +1,14 @@
+{
+  "name": "@sharp-yarn-test/foo-service",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@sharp-yarn-test/image-storage": "*",
+    "fastify": "^5.2.2"
+  }
+}

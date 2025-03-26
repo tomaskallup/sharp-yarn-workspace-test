@@ -1,0 +1,20 @@
+{
+  "name": "sharp-yarn-test",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "functions/functions-foo/index.js",
+  "workspaces": {
+    "packages": [
+      "functions/*",
+      "services/*",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "gcp-build": "turbo run gcp-build"
+  },
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "turbo": "^2.4.4"
+  }
+}

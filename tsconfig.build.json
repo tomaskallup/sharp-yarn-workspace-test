@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    {
+      "path": "./packages/image-storage/tsconfig.build.json"
+    }
+  ]
+}

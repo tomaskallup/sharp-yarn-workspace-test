@@ -1,0 +1,12 @@
+service: foo-service
+runtime: nodejs20
+
+env_variables:
+  APP_ENV: staging
+
+automatic_scaling:
+  max_instances: 5
+
+instance_class: F1
+
+entrypoint: cd services/foo-service && yarn start
